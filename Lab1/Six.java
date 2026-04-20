@@ -6,7 +6,6 @@ public class Six {
         Employee Leap = new Employee();
         Leap.Role = "Frontend Developer";
         Kage.Role = "Backend Developer";
-        
     }
 }
 
@@ -16,7 +15,8 @@ class General {
     String name;
     char gender;
     int age;
-    General(){
+
+    General() {
         ID = 0001;
         name = "Unknown";
         gender = 'M';
