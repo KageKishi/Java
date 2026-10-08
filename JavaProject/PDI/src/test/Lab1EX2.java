@@ -19,12 +19,12 @@ public class Lab1EX2 {
         root2 = (-b - Math.sqrt(delta)) / (2 * a);
         if (delta > 0) {
             System.out.println("\nFirst Root 1: " + root1);
-            System.out.println("\nSecond Root 1: " + root2);
+            System.out.println("\nSecond Root 2: " + root2);
         } else if (delta == 0) {
             System.out.println("\nFirst Root 1: " + root1);
         } else if (delta < 0) {
             System.out.println("\nFirst Root 1: " + (-b/(2*a)) + " + " + (Math.sqrt(-delta)/(2*a)) + "(i) ");
-            System.out.println("\nFirst Root 1: " + (-b/(2*a)) + " - " + (Math.sqrt(-delta)/(2*a)) + "(i) ");
+            System.out.println("\nSecond Root 2: " + (-b/(2*a)) + " - " + (Math.sqrt(-delta)/(2*a)) + "(i) ");
         }
     }
 }
