@@ -6,7 +6,7 @@ public class Lab1EX2 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         double root1, root2;
-        int a, b, c;
+        double a, b, c;
         System.out.println("Please enter a: ");
         a = sc.nextInt();
         System.out.println("Please enter a: ");
@@ -23,8 +23,8 @@ public class Lab1EX2 {
         } else if (delta == 0) {
             System.out.println("\nFirst Root 1: " + root1);
         } else if (delta < 0) {
-            System.out.println("\nFirst Root 1: " + (-b/(2*a)) + " + " + (Math.sqrt(-delta)/(2*a)) + "i ");
-            System.out.println("\nFirst Root 1: " + (-b/(2*a)) + " - " + (Math.sqrt(-delta)/(2*a)) + "i ");
+            System.out.println("\nFirst Root 1: " + (-b/(2*a)) + " + " + (Math.sqrt(-delta)/(2*a)) + "(i) ");
+            System.out.println("\nFirst Root 1: " + (-b/(2*a)) + " - " + (Math.sqrt(-delta)/(2*a)) + "(i) ");
         }
     }
 }
