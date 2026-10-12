@@ -21,11 +21,17 @@ public class Ex1 {
 
     public static int ValidateInteger(String prompt) {
         String line;
+        int number;
         while (true) {
             System.out.println(prompt);
             line = SC.nextLine();
             try {
-                return Integer.parseInt(line);
+                number = Integer.parseInt(line);
+                if(number > 1000 || number < 0){
+                    System.out.println("Enter a number between 0 and 1000");
+                }else{
+                    return number;
+                }
             } catch (NumberFormatException e) {
                 System.out.println("\nPlease enter a valid Integer\n");
             }
