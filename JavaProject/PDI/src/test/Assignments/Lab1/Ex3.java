@@ -22,7 +22,7 @@ public class Ex3 {
                         arr[i] = Integer.parseInt(inputSize[i]);
                     } catch (NumberFormatException e) {
                         validInput = false;
-                        System.out.println("\nPlease write 5 numbers");
+                        System.out.println("\nInvalid Numbers");
                         break;
                     }
                 }
@@ -30,7 +30,7 @@ public class Ex3 {
                 if (validInput) {
                     int min = arr[0];
                     int max = arr[0];
-                    System.out.println("Among all the numbers (");
+                    System.out.print("Among all the numbers (");
                     for (int i = 0; i < 5; i++) {
                         min = Math.min(min, arr[i]);
                         max = Math.max(max, arr[i]);

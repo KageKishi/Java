@@ -26,7 +26,6 @@ public class Ex4 {
                         date[i] = Integer.parseInt(trims[i]);
                     } catch (NumberFormatException e) {
                         Validinput = false;
-                        System.out.println("Output: invalid\n");
                     }
                 }
             }
@@ -46,15 +45,14 @@ public class Ex4 {
                 }
                 if (date[1] > 12 || (date[2] > 29 && date[1] == 2)) {
                     Validinput = false;
-                    continue;
                 }
                 if (date[1] == 2 && !LeapYear && date[2] == 29) {
                     Validinput = false;
-                    continue;
                 }
                 if ((date[2] == 31 && !Days31) || date[2] > 31) {
                     Validinput = false;
                 }
+
             }
             if (Validinput) {
                 System.out.println("Input: Valid");

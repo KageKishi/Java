@@ -13,11 +13,15 @@ public class Ex5 {
 
     public static int ValidateInteger(String prompt) {
         String line;
+        int number;
         while (true) {
             System.out.println(prompt);
             line = SC.nextLine();
             try {
-                return Integer.parseInt(line);
+                number = Integer.parseInt(line);
+                if(number < 2){
+                    System.out.println("Number is too small");
+                }else return number;
             } catch (NumberFormatException e) {
                 System.out.println("\nPlease enter a valid Integer\n");
             }

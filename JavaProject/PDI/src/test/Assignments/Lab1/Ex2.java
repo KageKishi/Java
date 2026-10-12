@@ -8,11 +8,11 @@ public class Ex2 {
     public static void main(String args[]) {
         double root1, root2;
         double a, b, c;
-        System.out.print("=".repeat(44));
+        System.out.print("=".repeat(50));
         System.out.print("\n");
-        System.out.printf("%32s", "Welcome to our program\n");
+        System.out.printf("%35s", "Welcome to our program\n");
         System.out.println("\n'Quadratic Equation Solver ax² + bx + c = 0'");
-        System.out.print("=".repeat(44));
+        System.out.print("=".repeat(50));
         System.out.println("");
         a = ValidateInteger("Input a: ");
         b = ValidateInteger("Input b: ");
@@ -31,7 +31,7 @@ public class Ex2 {
             System.out.println("\nFirst Root 1: " + (-b / (2 * a)) + " + " + (Math.sqrt(-delta) / (2 * a)) + "(i) ");
             System.out.println("\nSecond Root 2: " + (-b / (2 * a)) + " - " + (Math.sqrt(-delta) / (2 * a)) + "(i) ");
         }
-        System.out.print("-".repeat(44));
+        System.out.print("-".repeat(50));
     }
 
     public static int ValidateInteger(String prompt) {
