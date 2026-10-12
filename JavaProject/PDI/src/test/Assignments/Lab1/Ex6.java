@@ -6,7 +6,7 @@ b. What are the average score of this student */
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class Ex6 {
     public static void main(String[] args) {
         int[] arr = new int[4];
         String[] inputSize;

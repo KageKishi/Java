@@ -4,7 +4,7 @@ The program processes the input from the user and find out the
 minimum and maximum numbers.*/
 import java.util.Scanner;
 
-public class Main {
+public class Ex3 {
     public static void main(String[] args) {
         int[] arr = new int[5];
         String[] inputSize;
