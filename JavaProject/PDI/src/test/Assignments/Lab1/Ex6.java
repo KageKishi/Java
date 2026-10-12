@@ -84,7 +84,7 @@ public class Ex6 {
             System.out.print("and ");
             System.out.println(MinScoreSubs.get(MinScoreSubs.size() - 1) + " course)");
         } else if (MinScoreSubs.size() == 1) {
-            System.out.println("\nMin score is: " + min + " (" + MinScoreSubs.get(0) + " course)");
+            System.out.println("Min score is: " + min + " (" + MinScoreSubs.get(0) + " course)");
         }
 
         int sum = 0;
