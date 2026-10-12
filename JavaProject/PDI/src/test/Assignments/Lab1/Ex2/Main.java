@@ -2,7 +2,7 @@
 /*Write a program to solve a quadratic equation */
 import java.util.Scanner;
 
-public class Lab1EX2 {
+public class Main {
     private static final Scanner SC = new Scanner(System.in);
 
     public static void main(String args[]) {

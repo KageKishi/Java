@@ -4,7 +4,7 @@
 the result on screen. Note: Add some input validation. */
 import java.util.Scanner;
 
-public class Lab1EX1 {
+public class Main {
     private static final Scanner SC = new Scanner(System.in);
 
     public static void main(String args[]) {

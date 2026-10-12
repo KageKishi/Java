@@ -3,7 +3,7 @@
 where n is an input number by user. */
 import java.util.Scanner;
 
-public class Lab1EX5 {
+public class Main {
     private static final Scanner SC = new Scanner(System.in);
 
     public static void main(String[] args) {

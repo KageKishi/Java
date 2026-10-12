@@ -4,7 +4,7 @@ The program processes the input from the user and find out the
 minimum and maximum numbers.*/
 import java.util.Scanner;
 
-public class Lab1EX3 {
+public class Main {
     public static void main(String[] args) {
         int[] arr = new int[5];
         String[] inputSize;
@@ -31,7 +31,7 @@ public class Lab1EX3 {
                     int min = arr[0];
                     int max = arr[0];
                     System.out.println("Among all the numbers (");
-                    for (int i = 0 ; i < 5 ; i++) {
+                    for (int i = 0; i < 5; i++) {
                         min = Math.min(min, arr[i]);
                         max = Math.max(max, arr[i]);
                         if (i != 4) {
