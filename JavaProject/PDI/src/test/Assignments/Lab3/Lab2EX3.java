@@ -14,7 +14,7 @@ public class Lab2EX3 {
         JsonObject data;
         Gson gson = new Gson();
         Path path = Path.of(
-                "D:\\Github\\Java\\JavaProject\\PDI\\src\\test\\Assignments\\Lab3\\Employees.json");
+                "Employees.json");
         String FileContents = Files.readString(path).trim();
         if (FileContents.isEmpty()) {
             data = new JsonObject();

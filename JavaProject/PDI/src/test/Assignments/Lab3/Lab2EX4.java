@@ -15,9 +15,8 @@ public class Lab2EX4 {
         int Sum = 0;
         boolean CorrectScores = true;
         char Grade;
-        Scanner sc = new Scanner(System.in);
         Gson gson = new Gson();
-        Path path = Path.of("D:\\Github\\Java\\JavaProject\\PDI\\src\\test\\Assignments\\Lab3\\StudentGrades.json");
+        Path path = Path.of("StudentGrades.json");
         String FileContents = Files.readString(path);
         JsonObject data;
         JsonObject StudentData = new JsonObject();
@@ -33,6 +32,7 @@ public class Lab2EX4 {
                 throw new IllegalStateException("This File doesn't isn't Json.");
             }
         }
+        Scanner sc = new Scanner(System.in);
         System.out.println("Please enter Your Name: ");
         String Name = sc.nextLine();
         System.out.println("");

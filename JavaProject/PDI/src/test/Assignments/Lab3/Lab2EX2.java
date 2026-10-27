@@ -13,7 +13,7 @@ public class Lab2EX2 {
         Scanner sc = new Scanner(System.in);
         JsonObject data;
         Path path = Path
-                .of("D:\\Github\\Java\\JavaProject\\PDI\\src\\test\\Assignments\\Lab3\\Cities.json");
+                .of("Cities.json");
         String fileContents = Files.readString(path).trim();
         if (fileContents.isEmpty()) {
             data = new JsonObject();

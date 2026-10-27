@@ -31,7 +31,7 @@ public class Lab2EX1 {
         JsonObject newBook = new JsonObject();
         Gson gson = new Gson();
         Path filePath = Path.of(
-                "D:\\Github\\Java\\JavaProject\\PDI\\src\\test\\Assignments\\Lab3\\Books.json");
+                "Books.json");
         Scanner sc = new Scanner(System.in);
 
         public Library() throws IOException {
