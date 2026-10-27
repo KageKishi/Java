@@ -32,7 +32,7 @@ public class utilies {
             try {
                 return Double.parseDouble(line);
             } catch (NumberFormatException e) {
-                System.out.println("\nPlease enter a valid Integer\n");
+                System.out.println("\nPlease enter a valid number\n");
             }
         }
     }
@@ -46,5 +46,19 @@ public class utilies {
             }
         } while (amount <= 0);
         return amount;
+    }
+    public static String StringValidateInteger(String prompt, Scanner scanner) {
+        String line;
+        while (true) {
+            System.out.println(prompt);
+            long number = 0;
+            line = scanner.nextLine();
+            try {
+                number = Long.parseLong(line);
+                return Long.toString(number);
+            } catch (NumberFormatException e) {
+                System.out.println("\nPlease enter a valid Integer\n");
+            }
+        }
     }
 }

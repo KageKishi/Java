@@ -48,6 +48,8 @@ public class Lab2EX3 {
                 EmployeeData.addProperty("Gross Salary", GrossSalary);
                 EmployeeData.addProperty("HRA", HRA);
                 EmployeeData.addProperty("TCA", TCA);
+                System.out.println("Employee " + EmployeeName + " with ID " + EmployeeID + "\nSalary: " + GrossSalary
+                        + "\nBasic Salary: " + BasicSalary + "\nHRA: " + HRA + "\nTCA: " + TCA);
                 data.add(EmployeeName, EmployeeData);
                 Files.writeString(path, gson.toJson(data));
             }

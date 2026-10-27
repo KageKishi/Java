@@ -13,7 +13,7 @@ public class Lab2EX5 {
 
     public static class Account {
         @SerializedName("AccNumber")
-        int AccNumber;
+        String AccNumber;
         @SerializedName("Name")
         String name;
         @SerializedName("Balance")
@@ -47,6 +47,8 @@ public class Lab2EX5 {
                     account = Login(data);
                     if (account != null) {
                         AccountMenu(data, account);
+                    }else{
+                        account = new Account();
                     }
                     break;
                 }
@@ -68,7 +70,7 @@ public class Lab2EX5 {
     }
 
     public static Account Login(JsonObject data) {
-        int AccNumber = getAccountNumber();
+        String AccNumber = getAccountNumber();
         String accountKey = String.valueOf(AccNumber);
         if (!data.has(accountKey)) {
             System.out.println("Your account does not exist");
@@ -81,7 +83,7 @@ public class Lab2EX5 {
     }
 
     public static boolean Signup(JsonObject data, Account account) {
-        int AccNumber = getAccountNumber();
+        String AccNumber = getAccountNumber();
         if (data.has(String.valueOf(AccNumber))) {
             System.out.println("Account Already Exist");
             return false;
@@ -109,11 +111,11 @@ public class Lab2EX5 {
         }
     }
 
-    public static int getAccountNumber() {
+    public static String getAccountNumber() {
         boolean ValidNumber = false;
-        int AccNumber = 0;
+        String AccNumber = "0";
         while (!ValidNumber) {
-            AccNumber = utilies.ValidateInteger("Please enter your account number");
+            AccNumber = utilies.StringValidateInteger("Please enter your account number", sc);
             if(String.valueOf(AccNumber).length() != 14){
                 System.out.println("Account Number must be 14 character long.\n");
             }else{

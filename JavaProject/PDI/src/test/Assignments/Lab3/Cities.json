@@ -1,6 +1,1 @@
-{
-    "Tokyo": {
-        "Celsius": 900.0,
-        "Farenheit": 1652.0
-    }
-}
+{"Tokyo":{"Celsius":900.0,"Farenheit":1652.0},"Singapore":{"Farenheit":82.03999999999999,"Celsius":27.8},"Beijing":{"Farenheit":55.22,"Celsius":12.9},"Paris":{"Farenheit":54.14,"Celsius":12.3}}

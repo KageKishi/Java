@@ -32,7 +32,7 @@ public class Lab2EX2 {
         while (AddingCities) {
             System.out.println("Enter the city or 0 to exit: ");
             city = sc.nextLine();
-            if (city == "0")
+            if (city.equals("0"))
                 AddingCities = false;
             else {
                 double Celsius = utilies.ValidateDouble("Please enter the temperature in Celsius", sc);
@@ -41,12 +41,12 @@ public class Lab2EX2 {
                 temperature.addProperty("Celsius", Celsius);
                 data.add(city, temperature);
                 Files.writeString(path, new Gson().toJson(data));
-            }
-            for (String key : data.keySet()) {
-                System.out.println(key + "\nFarenheit: " + data.getAsJsonObject(key).get("Farenheit").getAsDouble()
-                        + "\nCelsius: " + data.getAsJsonObject(key).get("Celsius").getAsDouble());
+                System.out.println("Temperature for " + city + "\nCelsius: " + Celsius + "\nFarenheit: " + Farenheit);
             }
         }
-
+        for (String key : data.keySet()) {
+            System.out.println(key + "\nFarenheit: " + data.getAsJsonObject(key).get("Farenheit").getAsDouble()
+                    + "\nCelsius: " + data.getAsJsonObject(key).get("Celsius").getAsDouble());
+        }
     }
 }

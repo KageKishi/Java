@@ -55,8 +55,9 @@ public class Lab2EX1 {
             while (AddingBooks) {
                 System.out.println("Please enter Book title or 0 to exit: ");
                 BookName = sc.nextLine();
-                if (BookName == "0") {
+                if (BookName.equals("0")){
                     AddingBooks = false;
+                    break;
                 } else {
                     System.out.println("Pleasse Enter Authors name: ");
                     Author = sc.nextLine();
