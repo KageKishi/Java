@@ -36,4 +36,15 @@ public class utilies {
             }
         }
     }
+
+    public static double getPositiveAmount(String prompt) {
+        double amount;
+        do {
+            amount = utilies.ValidateDouble(prompt);
+            if (amount <= 0) {
+                System.out.println("Amount must be greater than zero");
+            }
+        } while (amount <= 0);
+        return amount;
+    }
 }
