@@ -1,3 +1,4 @@
-.class
-.png
-.csv
+*.class
+*.png
+*.csv
+Ex2LuckyNumber/
