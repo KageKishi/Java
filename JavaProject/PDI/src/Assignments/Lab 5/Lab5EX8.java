@@ -105,13 +105,19 @@ public class Lab5EX8 {
             }
         }
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException{
         Thread sumThread = new Thread(new SumThread(100));
         Thread primeThread = new Thread(new PrimeThread());
         Thread csvThread = new Thread(new CSVThread("students.csv"));
 
         sumThread.start();
+        System.out.println("");
         primeThread.start();
+        System.out.println("");
         csvThread.start();
+
+        sumThread.join();
+        primeThread.join();
+        csvThread.join();
     }
 }

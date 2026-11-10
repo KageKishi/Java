@@ -116,7 +116,9 @@ public class Lab5EX7 {
         CSVThread csvThread = new CSVThread(filePath);
 
         sumThread.start();
+        System.out.println("");
         primeThread.start();
+        System.out.println("");
         csvThread.start();
 
         sumThread.join();
